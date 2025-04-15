@@ -1,5 +1,390 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--page-background-image);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 41.8rem;
+  font-family: var(--page-font-family);
+  font-size: var(--basic-font-size);
+  font-weight: var(--basic-font-weight);
+  color: var(--context-color-dark-light-theme);
+  line-height: 23.4px;
+  padding-inline: 10px;
+  padding-block: 10px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  height: 97vh;
+  min-height: 648px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 0;
+  bottom: 0;
+  border-bottom: solid 1px var(--accent-color-theme);
+  border-left: solid 1px var(--accent-color-theme);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 0;
+  top: 0;
+  border-top: solid 1px var(--accent-color-theme);
+  border-right: solid 1px var(--accent-color-theme);
+}
+
+.header__theme-menu {
+  justify-self: right;
+  align-self: center;
+  margin-block-start: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  width: 70px;
+  height: 26px;
+  background-color: transparent;
+  color: var(--accent-color-theme);
+  border: none;
+  line-height: 15px;
+}
+
+.header__theme-menu-button_active {
+  outline: solid 1px var(--accent-color-theme);
+}
+
+.header__theme-menu-button:hover {
+  outline: solid 1px var(--menu-button-hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color-theme);
+}
+
+.header_record {
+  position: absolute;
+  right: 28px;
+  top: 10px;
+  font-weight: 400;
+  line-height: 25%;
+  color: var(--accent-color-theme);
+}
+
+.header_record::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color-theme);
+  border-radius: 6px;
+  left: 41px;
+  bottom: 8px;
+  filter: blur(1.5px);
+}
+
+.header_title {
+  font-size: var(--title-no-focus-font-size);
+  color: var(--title-no-focus);
+  line-height: 83%;
+  align-self: center;
+
+  text-shadow: 4px 4px 0 var(--accent-color-theme);
+}
+
+.title-decor {
+  background-color: var(--accent-color-theme);
+  color: var(--layout-color-dark-light-theme);
+}
+
+.what_to_do_location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  align-self: center;
+  margin-block-end: 12px;
+}
+
+.what_to_do {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content);
+  gap: 50px;
+  margin-block-start: 50px;
+}
+
+.main__why-difficult-concentrate {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 20px;
+}
+
+.main__basic-title-style {
+  font-size: var(--main__basic-title-font-size);
+  color: var(--accent-color-theme);
+}
+
+.content_description-text {
+  margin-block-start: 10px;
+  font-weight: 400;
+}
+
+.main__what-reduces-concentration {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content);
+  gap: 20px;
+}
+
+.main__how-to-concentrate-better {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, min-content);
+  gap: 20px;
+}
+
+.main_subtitle-adviсe {
+  font-weight: 400;
+}
+
+.main__pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, min-content);
+  gap: 10px;
+}
+
+.main__pictures__pictures-size {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content_description-text__description-link {
+  text-shadow: 2px 2px 0 var(--accent-color-theme);
+  text-decoration: none;
+}
+
+.content_description-text__description-link:focus {
+  outline: none;
+  border: none;
+}
+
+.content_description-text__description-link:focus-visible {
+  outline: 1px solid var(--context-color-dark-light-theme);
+}
+
+.content_description-text__description-link:hover {
+  border-bottom: solid 1.5px var(--context-color-dark-light-theme);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  margin-block-start: 49px;
+  height: 97vh;
+  min-height: 600px;
+}
+
+.footer_title {
+  font-size: var(--title-no-focus-font-size);
+  color: var(--title-no-focus);
+  line-height: 83%;
+  text-shadow: 2px 2px 0 var(--accent-color-theme);
+  justify-self: center;
+  align-self: center;
+}
+
+@media (width >= 768px) {
+  .page {
+    padding-inline: 20px;
+    padding-block: 20px;
+    background-size: auto 64rem;
+  }
+
+  .header {
+    height: 96vh;
+    min-height: 768px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 110px;
+  }
+
+  .header_title {
+    margin-inline-start: -20px;
+  }
+
+  .what_to_do_location {
+    margin-block-end: 115px;
+  }
+
+  .what_to_do {
+    grid-column: 2;
+  }
+
+  .main {
+    margin-block-start: 80px;
+    gap: 80px;
+  }
+
+  .main__why-difficult-concentrate {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  .main__what-reduces-concentration {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, min-content);
+  }
+
+  .main__how-to-concentrate-better {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, min-content);
+  }
+
+  .main__what-reduces-concentration_location {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .main__basic-title-style {
+    grid-row: 1 / -1;
+  }
+
+  .main__pictures {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, min-content);
+    gap: 20px;
+  }
+
+  .main__pictures .main_subtitle {
+    grid-column: 1 / -1;
+  }
+
+  .main__pictures__sunset {
+    grid-column: 1 / 3;
+  }
+
+  .main__pictures__ice-cream {
+    grid-column: 3;
+    grid-row: span 2;
+    height: 100%;
+  }
+
+  .main__pictures__tape {
+    grid-column: 1;
+    grid-row: span 2;
+    height: 100%;
+  }
+
+  .main__pictures__books {
+    grid-column: 2;
+    grid-row: span 1;
+  }
+
+  .main__pictures__street {
+    grid-column: span 2;
+  }
+
+  .footer {
+    margin-block-start: 80px;
+    height: 96vh;
+    min-height: 768px;
+  }
+}
+
+@media (width >= 768px) and (width < 1024px) {
+  .main__what-reduces-concentration__other_location {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (width >= 1024px) {
+  .page {
+    background-size: auto 48rem;
+  }
+
+  .header {
+    height: 94vh;
+    min-height: 729px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-block-start: 0;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .what_to_do_location {
+    margin-block-end: 60px;
+  }
+
+  .main {
+    margin-block-start: 78px;
+    gap: 80px;
+  }
+
+  .main__why-difficult-concentrate {
+    column-gap: 10px;
+  }
+
+  .main__what-reduces-concentration {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  .main__how-to-concentrate-better {
+    column-gap: 10px;
+  }
+
+  .main__what-reduces-concentration_location {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    height: 94vh;
+    min-height: 729px;
+  }
 }
