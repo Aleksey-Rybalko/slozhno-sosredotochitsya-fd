@@ -13,6 +13,9 @@
   --context-color-dark-light-theme: #f1b2ce;
   --menu-button-hover: rgb(255 0 112 / 0.4);
   --accent-color-theme: #ff0070;
+  --screen-resolution-min-width:375px;
+  --screen-resolution-min-height:668px;  
+  --screen-resolution-height:100vh;  
 }
 
 @media (width >= 768px) {
