@@ -214,7 +214,6 @@
   margin-block-start: 40px;
   height: var(--screen-resolution-height);
   min-height: var(--screen-resolution-min-height);
-
 }
 
 .footer_title {
@@ -227,7 +226,7 @@
 
 @media (width >= 768px) {
   :root .page {
-    --screen-resolution-min-height:1024px;
+    --screen-resolution-min-height: 1024px;
   }
 
   .header {
@@ -239,7 +238,7 @@
     left: 20px;
     bottom: 20px;
   }
-  
+
   .decorated-zone::after {
     right: 20px;
     top: 20px;
@@ -337,7 +336,6 @@
   .footer {
     margin-block-start: 60px;
   }
-
 }
 
 @media (width >= 768px) and (width < 1024px) {
@@ -347,9 +345,8 @@
 }
 
 @media (width >= 1024px) {
-
   :root .page {
-    --screen-resolution-min-height:768px;
+    --screen-resolution-min-height: 768px;
   }
 
   .header_title {
