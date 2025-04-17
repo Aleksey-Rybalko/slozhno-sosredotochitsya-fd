@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --page-background-image: url("../images/cover-image-dark_maket.png");
+  --page-background-image: url("../images/cover-image.png");
   --page-font-family: "IBM Plex mono", monospace;
   --title-no-focus: #db00ff;
   --title-no-focus-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
