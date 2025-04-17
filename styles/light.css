@@ -13,8 +13,8 @@
   --title-no-focus: #ffc2e6;
   --context-color-dark-light-theme: #353430;
   --menu-button-hover: rgb(50 49 45 / 0.4);
-  --accent-color-theme-shadow-and-title: #ff8dcb;
-  --accent-color-theme: #353430;
+  --accent-color-theme: #ff8dcb;
+  --accent-color-theme-decore: #353430;
 }
 
 .theme-light .header_record {
@@ -27,8 +27,8 @@
     --title-no-focus: #ffc2e6;
     --context-color-dark-light-theme: #353430;
     --menu-button-hover: rgb(50 49 45 / 0.4);
-    --accent-color-theme-shadow-and-title: #ff8dcb;
-    --accent-color-theme: #353430;
+    --accent-color-theme: #ff8dcb;
+    --accent-color-theme-decore: #353430;
   }
 
   .header_record {
