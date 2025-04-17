@@ -3,8 +3,8 @@
 .page {
   background-image: var(--page-background-image);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: auto 100vh;
+  background-position: center;
+  background-size: cover;
   font-family: var(--page-font-family);
   font-size: var(--basic-font-size);
   font-weight: var(--basic-font-weight);
@@ -69,6 +69,7 @@
 
 .header__theme-menu-button_active {
   outline: solid 1px var(--accent-color-theme);
+  pointer-events: none; 
 }
 
 .header__theme-menu-button:hover {
@@ -110,12 +111,12 @@
   font-size: var(--title-no-focus-font-size);
   color: var(--title-no-focus);
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--accent-color-theme);
+  text-shadow: 4px 4px 0 var(--accent-color-theme-shadow-and-title);
   padding-block-start: 12px;
 }
 
 .title-decor {
-  background-color: var(--accent-color-theme);
+  background-color: var(--accent-color-theme-shadow-and-title);
   color: var(--layout-color-dark-light-theme);
 }
 
@@ -189,7 +190,7 @@
 }
 
 .content_description-text__description-link {
-  text-shadow: 2px 2px 0 var(--accent-color-theme);
+  text-shadow: 2px 2px 0 var(--accent-color-theme-shadow-and-title);
   text-decoration: none;
 }
 
@@ -219,7 +220,7 @@
 .footer_title {
   font-size: var(--title-no-focus-font-size);
   color: var(--title-no-focus);
-  text-shadow: 2px 2px 0 var(--accent-color-theme);
+  text-shadow: 2px 2px 0 var(--accent-color-theme-shadow-and-title);
   justify-self: center;
   align-self: center;
 }

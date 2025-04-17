@@ -9,89 +9,29 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --page-background-image: url("../images/cover-image-light.png");
+  --page-background-image: url("../images/cover-image-light_maket.png");
   --title-no-focus: #ffc2e6;
   --context-color-dark-light-theme: #353430;
   --menu-button-hover: rgb(50 49 45 / 0.4);
-  --accent-color-theme: #ff8dcb;
-  --layout-color-dark-light-theme: #353430;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --page-background-image: url("../images/cover-image-light.png");
-    --title-no-focus: #ffc2e6;
-    --context-color-dark-light-theme: #353430;
-    --menu-button-hover: rgb(50 49 45 / 0.4);
-    --accent-color-theme: #ff8dcb;
-    --layout-color-dark-light-theme: #353430;
-  }
-
-  .theme-auto .header_record {
-    display: none;
-  }
-
-  .theme-auto .main__basic-title-style {
-    color: var(--layout-color-dark-light-theme);
-  }
-
-  .theme-auto .header__theme-menu-button {
-    color: var(--context-color-dark-light-theme);
-  }
-
-  .theme-auto .header__theme-menu-button_active {
-    outline: solid 1px var(--layout-color-dark-light-theme);
-  }
-
-  .theme-auto .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--layout-color-dark-light-theme);
-  }
-
-  .theme-auto .content_description-text__description-link:focus-visible {
-    outline: 1px solid var(--layout-color-dark-light-theme);
-  }
-
-  .theme-auto .decorated-zone::before {
-    border-bottom: solid 1px var(--layout-color-dark-light-theme);
-    border-left: solid 1px var(--layout-color-dark-light-theme);
-  }
-
-  .theme-auto .decorated-zone::after {
-    border-top: solid 1px var(--layout-color-dark-light-theme);
-    border-right: solid 1px var(--layout-color-dark-light-theme);
-  }
+  --accent-color-theme-shadow-and-title: #ff8dcb;
+  --accent-color-theme: #353430;
 }
 
 .theme-light .header_record {
   display: none;
 }
 
-.theme-light .main__basic-title-style {
-  color: var(--layout-color-dark-light-theme);
-}
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-background-image: url("../images/cover-image-light_maket.png");
+    --title-no-focus: #ffc2e6;
+    --context-color-dark-light-theme: #353430;
+    --menu-button-hover: rgb(50 49 45 / 0.4);
+    --accent-color-theme-shadow-and-title: #ff8dcb;
+    --accent-color-theme: #353430;
+  }
 
-.theme-light .header__theme-menu-button {
-  color: var(--context-color-dark-light-theme);
-}
-
-.theme-light .header__theme-menu-button_active {
-  outline: solid 1px var(--layout-color-dark-light-theme);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--layout-color-dark-light-theme);
-}
-
-.theme-light .content_description-text__description-link:focus-visible {
-  outline: 1px solid var(--layout-color-dark-light-theme);
-}
-
-.theme-light .decorated-zone::before {
-  border-bottom: solid 1px var(--layout-color-dark-light-theme);
-  border-left: solid 1px var(--layout-color-dark-light-theme);
-}
-
-.theme-light .decorated-zone::after {
-  border-top: solid 1px var(--layout-color-dark-light-theme);
-  border-right: solid 1px var(--layout-color-dark-light-theme);
+  .header_record {
+    display: none;
+  }
 }
