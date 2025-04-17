@@ -190,7 +190,7 @@
 }
 
 .content_description-text__description-link {
-  text-shadow: 2px 2px 0 var(--context-color-dark-light-theme);
+  text-shadow: 2px 2px 0 var(--accent-color-theme-decore);
   text-decoration: none;
 }
 
