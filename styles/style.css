@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: var(--page-color);
   font-family: var(--page-font-family);
   font-size: var(--basic-font-size);
   font-weight: var(--basic-font-weight);

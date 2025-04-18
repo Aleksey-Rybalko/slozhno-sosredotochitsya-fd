@@ -16,6 +16,7 @@
   --accent-color-theme: #ff8dcb;
   --accent-color-theme-decore: #353430;
   --layout-color-dark-light-theme: #353430;
+  --page-color: #fff1f7;
 }
 
 .theme-light .header_record {
@@ -31,6 +32,7 @@
     --accent-color-theme: #ff8dcb;
     --accent-color-theme-decore: #353430;
     --layout-color-dark-light-theme: #353430;
+    --page-color: #fff1f7;
   }
 
   .header_record {

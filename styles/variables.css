@@ -17,6 +17,7 @@
   --screen-resolution-min-width: 375px;
   --screen-resolution-min-height: 668px;
   --screen-resolution-height: 100vh;
+  --page-color: #000028;
 }
 
 @media (width >= 768px) {
